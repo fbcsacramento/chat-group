@@ -83,7 +83,7 @@ const handleLogin = (event) => {
     login.style.display = "none"
     chat.style.display = "flex"
 
-    websocket = new WebSocket("wss://fabriciosacramento.com.br/chat-group/:8080")
+    websocket = new WebSocket("ws://fabriciosacramento.com.br/chat-group/")
     websocket.onmessage = processMessage
 }
 
